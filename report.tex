@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{/home/bakunowski/QueenMary/FundamentalsOfDsp/Lab1/plots/}}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+% change font
+%\usepackage[default]{sourcesanspro}
+%\usepackage[T1]{fontenc}
+% helvetica
+% \usepackage[scaled]{helvet}
+% \renewcommand\familydefault{\sfdefault}
+% \usepackage[T1]{fontenc}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+\begin{flushleft}
+\normalsize
+Karol Bakunowski \hfill 11 March 2020\\
+\vspace{5 mm}
+\Large
+Assignment 1: Dynamic Range Compressor\\
+\normalsize
+\end{flushleft}
+
+\section{Introduction}
+
+A multiband dynamic range compressor VST plugin was developed using the JUCE
+platform. In this report, the discussion of the implementation, as well as the
+analysis of it's output are analysed.
+
+\section{Design and Implementation}
+
+The three band compressor implementation presented in this report was chosen to
+demonstrate the implementation of a passband crossover, as well as maintaining
+a certain level of computational complexity.
+
+\subsection{Compressor}
+
+% demo code was used as the basis, from book
+
+% how the knee operates
+
+% throw some equations in here?
+
+\subsection{Crossover}
+
+% the crossover was produced using the juce iir coeff. and iirfilter libraries
+
+% talk about the linkwitz riley filter (4th order)
+
+% quote juce website
+
+\subsection{GUI}
+
+% describe parameters here
+
+\section{Analysis}
+
+% to visualise the output of the multi band, a logarithmic sine wave sweep was passed as the input
+
+% show a spectrogram and how plug in did
+
+% sine sweep passed through the compressor
+    % control case
+    % three different settings - for each compressor
+
+\section{Evaluation}
+
+% shown that it performs as expected
+% separate into distinct bands and apply different levels of compression
+
+
+\end{document}
